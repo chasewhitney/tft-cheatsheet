@@ -1,0 +1,180 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 61.5%;
+}
+
+body {
+  font-family: "Open Sans", "Roboto", Arial, Helvetica, sans-serif;
+  font-size: 0.7rem;
+  background-color: #0e0e0e;
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+}
+
+#tableContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 0.6rem 0.6rem 0;
+  background-color: #0e0e0e;
+  background-color: #303030;
+}
+
+.row {
+  display: flex;
+}
+
+.cell {
+  height: 6rem;
+  width: 6rem;
+  background-color: #0e0e0e;
+  border: 3px solid #303030;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.icon-cell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #303030;
+  border: 3px solid #303030;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.icon-cell:hover img.icon {
+  height: 4rem;
+  width: 4rem;
+}
+
+img.champImg {
+  margin: auto;
+  height: 6rem;
+  width: 6rem;
+  position: absolute;
+}
+
+img.icon {
+  height: 3.7rem;
+  width: 3.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.champCell {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.class-set {
+  position: absolute;
+  right: 0;
+}
+
+.cost-1 {
+  background-color: white;
+  border: 1px solid white;
+}
+
+.cost-2 {
+  background-color: green;
+  border: 1px solid green;
+}
+
+.cost-3 {
+  background-color: DodgerBlue;
+  border: 1px solid DodgerBlue;
+}
+
+.cost-4 {
+  background-color: HotPink;
+  border: 1px solid HotPink;
+}
+
+.cost-5 {
+  background-color: orange;
+  border: 1px solid orange;
+}
+
+.cost {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 1.5rem;
+  width: 1.5rem;
+  border: 1px solid black;
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  font-weight: bold;
+  box-sizing: border-box;
+}
+
+.cellSize-1 {
+  height: 6rem;
+  width: 6rem;
+}
+
+.cellSize-2 {
+  height: 6rem;
+  width: 3rem;
+}
+
+.cellSize-3 {
+  height: 6rem;
+  width: 2rem;
+}
+
+.tooltip {
+  position: relative;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  padding: 0.7rem;
+  min-width: 26rem;
+  background-color: #fff;
+  color: black;
+  font-size: 1.4rem;
+  text-align: center;
+  border-radius: 3px;
+  border: 1px solid black;
+
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+  cursor: pointer;
+  text-align: center;
+}
+
+.tooltip .tooltiptext.top {
+  top: 4.5rem;
+  right: 3.5rem;
+}
+.tooltip .tooltiptext.left {
+  bottom: 4rem;
+  right: 3.5rem;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}

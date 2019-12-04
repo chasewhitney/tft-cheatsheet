@@ -142,6 +142,10 @@ img.icon {
   width: 2rem;
 }
 
+.set {
+  font-size: 1.1rem;
+}
+
 .tooltip {
   position: relative;
 }
